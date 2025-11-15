@@ -5,23 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <title>Cart System</title>
+
 </head>
 <body class="bg-gray-200">
-  <main class="container mx-auto p-5">
+  <main class="container mx-auto p-5" id="main">
     <h1 class="text-4xl font-semibold text-center mt-5 mb-8">
       Tindahan ni Pareng Paeng.
     </h1>
 
-    
     <section class="flex flex-col md:flex-row gap-5">
-      
-      
       <div class="flex-1 bg-pink-200 p-5 rounded-lg shadow-md">
         <h2 class="text-3xl mb-5 text-center text-white font-bold">
           Products
         </h2>
 
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <article class="grid grid-cols-2 md:grid-cols-3 gap-4">
 
           
           <div class="bg-white text-xl p-4 font-semibold rounded-lg shadow overflow-visible">
@@ -108,11 +106,11 @@
             </button>
           </div>
 
-        </div>
+        </article>
       </div>
 
       
-      <div class="flex-1 bg-pink-200 p-5 rounded-lg shadow-md">
+      <article class="flex-1 bg-pink-200 p-5 rounded-lg shadow-md">
         <h2 class="text-3xl mb-5 text-center text-white font-bold">
           Cart
         </h2>
@@ -127,9 +125,11 @@
             <span id="totalPrice">₱0.00</span>
           </div>
         </div>
-      </div>
-
+      </article>
     </section>
   </main>
+
+  <script src="process.js"></script>
+  
 </body>
 </html>
